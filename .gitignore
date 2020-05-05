@@ -1,0 +1,21 @@
+**/.idea
+
+**.iml
+
+**/target
+
+**/java
+
+
+
+# Mac
+
+.DS_Store
+
+**.xml
+
+# Maven
+
+**/log/
+
+**/target/

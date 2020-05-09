@@ -3,17 +3,22 @@
 
 @font-face {
     font-family: 'Raleway-Extra Bold';
-    src: url("fonts/Raleway-Extra Bold.ttf");
+    src: url("../fonts/Raleway-Extra Bold.ttf");
 }
 
 @font-face {
     font-family: 'Raleway-Regular';
-    src: url("fonts/Raleway-Regular.ttf");
+    src: url("../fonts/Raleway-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Roboto-Black';
-    src: url("fonts/Roboto-Black.ttf");
+    src: url("../fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-Black Italic';
+    src: url("../fonts/Roboto-Black Italic.ttf");
 }
 
 
@@ -202,7 +207,7 @@ body {
     left: 300px;
     width: 870px;
     height: 1674px;
-    background: #eaeaea;
+    background: #f8f8f8;
 }
 
 #new_products_wrap {
@@ -211,7 +216,7 @@ body {
     grid-gap: 30px;
     width: 870px;
     height: 724px;
-    background: #26d2fc;
+    background: #f8f8f8;
 
 }
 
@@ -221,7 +226,7 @@ body {
     grid-gap: 30px;
     width: 870px;
     height: 400px;
-    background: #26d2fc;
+    background: #f8f8f8;
 
 }
 
@@ -231,15 +236,84 @@ body {
     grid-gap: 30px;
     width: 870px;
     height: 400px;
-    background: #26d2fc;
+    background: #f8f8f8;
 
+}
+
+.wrap_header {
+    height: 48px;
+    grid-column: 1/4;
+    padding: 26px 0 0 25px;
+    box-sizing: border-box;
+    color: #707070;
+    font-family: "Roboto - Black Italic", sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .product {
     width: 270px;
     height: 320px;
-    background: #707070;
+    background: #ffffff;
 }
+
+.product_body {
+    width: 250px;
+    height: 235px;
+    background: #eaeaea;
+    margin: 10px auto 0;
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    right: 0;
+}
+
+.product_footer {
+    position: relative;
+    width: 270px;
+    height: 75px;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Roboto-Black Italic', sans-serif;
+}
+
+.product_name {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    width: 137px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+}
+
+.product_price {
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.sale {
+    position: absolute;
+    bottom: 21px;
+    right: 14px;
+    color: #e24602;
+    font-family: "Roboto - Black Italic", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+
 
 .info {
     position: relative;
@@ -263,3 +337,171 @@ body {
     font-style: italic;
     text-transform: uppercase;
 }
+
+/*body bottom*/
+
+
+.body_bottom {
+    width: 1170px;
+    height: 661px;
+    margin: 0 auto;
+}
+
+
+#brand {
+    width: 1170px;
+    height: 160px;
+    background: #fff;
+    position: relative;
+}
+
+#brands_img {
+    position: absolute;
+    top: 70px;
+    left: 14px;
+}
+
+#insta_feed {
+    position: relative;
+    width: 1170px;
+    height: 105px;
+    background: #eaeaea;
+}
+
+#insta_feed_icon {
+    position: absolute;
+    top: 51px;
+    left: 449px;
+}
+
+#insta_feed_text_one{
+    position: absolute;
+    top: 55px;
+    left: 485px;
+    color: #333333;
+    font-family: "Roboto - Black Italic",sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#insta_feed_text_two{
+    position: absolute;
+    top: 55px;
+    left: 655px;
+    padding-top: 4px;
+    color: #333333;
+    font-family: "Roboto - Black Italic", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#insta_promo {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) ;
+    grid-column-gap: 12px;
+    background: #eaeaea;
+}
+
+.insta_icon {
+    width: 185px;
+    height: 185px;
+    padding-bottom: 60px;
+}
+
+#large_social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+}
+
+.large_soc_icon {
+    position: relative;
+    width: 390px;
+    height: 150px;
+}
+
+#color_bg_fb {
+    background: #3b5997;
+}
+
+#color_bg_tw {
+    background: #3fccfd;
+}
+
+#color_bg_pin {
+    background: #cb2027;
+}
+
+#fb_large_icon {
+    position: absolute;
+    top: 44px;
+    left: 180px;
+}
+
+#tw_large_icon {
+    position: absolute;
+    top: 49px;
+    left: 163px;
+}
+
+#pin_large_icon {
+    position: absolute;
+    top: 43px;
+    left: 163px;
+}
+
+/*footer*/
+
+
+.footer {
+    height: 351px;
+}
+
+.footer_top {
+    position: relative;
+    height: 301px;
+    background: #373737;
+
+}
+
+.footer_bottom {
+    position: relative;
+    height: 50px;
+    background: #333;
+}
+
+#copy {
+    position: absolute;
+    top: 20px;
+    left: 171px;
+}
+
+#copy_icon {
+    float: left;
+}
+
+#copy_text {
+    color: #dad9d9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.6px;
+}
+
+.social_bottom {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 19px;
+    right: 168px;
+    width: 178px;
+    height: 16px;
+    filter: invert(1);
+}
+
+
+
+
+
+

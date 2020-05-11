@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 @font-face {
     font-family: 'Raleway-Extra Bold';
@@ -122,28 +123,21 @@ body {
 }
 
 .buy_button {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
     position: absolute;
     top: 474px;
     right: 295px;
-    width: 124px;
-    height: 49px;
-    background: #fff51f;
 }
 
 #buy_now {
-    width: 80px;
-    height: 14px;
-    text-align: center;
+    width: 124px;
+    height: 49px;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
     color: #000;
     background: #fff51f;
+    border: none;
 }
 
 /*body*/
@@ -151,12 +145,13 @@ body {
 .body {
     height: 2317px;
     background: #f8f8f8;
+    margin: 0 auto;
 }
 
 .body_top {
     top: -18px;
     width: 1170px;
-    height: 1674px;
+    height: 1657px;
     margin: 0 auto;
     position: relative;
 }
@@ -269,7 +264,8 @@ body {
 
 .label {
     position: absolute;
-    right: 0;
+    top: -10px;
+    right: -10px;
 }
 
 .product_footer {
@@ -456,37 +452,152 @@ body {
 
 .footer {
     height: 351px;
+    margin: 0 auto;
 }
 
 .footer_top {
-    position: relative;
-    height: 301px;
+    height: 303px;
     background: #373737;
 
 }
 
+.footer_top_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+    grid-column-gap: 45px ;
+    justify-content: space-between;
+    width: 1117px;
+    height: 303px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer_top_block {
+    margin: 75px 0 64px 0;
+    /*filter: invert(1);*/
+
+}
+
+.footer_top_header {
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer_top_content_one {
+    margin: 28px auto;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.footer_top_content_two {
+    margin: 5px auto;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.form {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#form_input{
+    width: 180px;
+    height: 30px;
+    background: #fff51f;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    border: none;
+}
+
+#form_button {
+    width: 71px;
+    height: 32px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    background: #000000;
+    border: none;
+}
+
+.payments {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#phone {
+    margin: 14px 0 0 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+}
+
+#mail {
+    margin: 5px auto;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#mail a {
+    color: #faef03;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+
+
+/*floor*/
+
 .footer_bottom {
     position: relative;
-    height: 50px;
+    height: 52px;
     background: #333;
+
 }
 
 #copy {
     position: absolute;
+    width: 500px;
+    height: 16px;
     top: 20px;
-    left: 171px;
+    left: 145px;
 }
 
-#copy_icon {
+#copy_img {
     float: left;
 }
 
 #copy_text {
+    padding-left: 18px;
+    box-sizing: border-box;
     color: #dad9d9;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 400;
-    line-height: 21.6px;
 }
 
 .social_bottom {
@@ -494,7 +605,7 @@ body {
     justify-content: space-between;
     position: absolute;
     top: 19px;
-    right: 168px;
+    right: 150px;
     width: 178px;
     height: 16px;
     filter: invert(1);
